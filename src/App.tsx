@@ -16,7 +16,10 @@ const App: React.FC = () => {
         <Route path="/" exact>
           <Textbox />
         </Route>
-        <Route path="/about" exact>
+        <Route path="/about/" exact>
+          <About />
+        </Route>
+        <Route path="/about/:sendTo" exact>
           <About />
         </Route>
       </Switch>

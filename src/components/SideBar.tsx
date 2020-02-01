@@ -9,7 +9,7 @@ interface IMailForm {
     descript: string;
 }
 
-const listitems: string[] = ['apple', 'baby', 'cnady'];
+const listitems: string[] = ['apple', 'baby', 'candy'];
 
 export const SideBar: React.FC = () => {
 
@@ -17,7 +17,11 @@ export const SideBar: React.FC = () => {
 
     return (
       <div>
-          {listitems.map((txt: string, index: number) => <p key={index}>{txt}</p>)}
+          {listitems
+            .map((txt: string, index: number) => <p key={index}>
+              <a href={'/about/'+txt}>{txt}</a>
+              </p>)
+          }
       </div>
     );
   }

@@ -45,7 +45,7 @@ export const MailForm: React.FC = () => {
       <br></br>
       description
       <br></br>
-      <textarea cols={25} rows={4}      // name="text"
+      <textarea cols={25} rows={4}
         name="descript"
         value={mailForm.descript}
         onChange={handleTextAreaChg}>
