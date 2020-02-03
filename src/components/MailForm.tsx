@@ -49,7 +49,8 @@ export const MailForm: React.FC = () => {
         name="descript"
         value={mailForm.descript}
         onChange={handleTextAreaChg}>
-        </textarea>
+      </textarea>
+      <br></br>
       <button onClick={clickEvent}>btn</button>
     </div>
   );
